@@ -1,0 +1,117 @@
+body {
+	margin: 0;
+	padding: 0;
+	/*font-family: 'Source Code Pro';*/
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	color: #333;
+}
+
+.line {
+	display: table;
+	width: 100%;
+}
+
+.column {
+	display: table-cell;
+}
+ 
+.no-maxWith {
+	max-width: initial;
+}
+ 
+.no-padding {
+	padding: 0;
+}
+ 
+.no-margin {
+	margin: 0;
+} 
+ 
+.userContainer {
+	height: 100%;
+	margin-right: 0;
+}
+ 
+.stateContainer {
+	border-left: 1px solid #888888;
+	height: 100%;
+	text-align: center;
+	vertical-align: middle;
+	position: relative;
+}
+ 
+.stateContainer:first-child {
+	border-left:0;
+}
+ 
+.settingsContainer {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	z-index: 10;
+
+}
+ 
+.settingsContainer a {
+	color: #000; 
+}
+ 
+.settingsContainer i {
+	font-size: 36px;
+}
+
+.stateContainer .state-border {
+	border-width: 5px;
+	border-style: solid;
+}
+
+.stateContainer img {
+	border-radius: 50%;
+	width: 80%;
+	max-width: 450px;
+}
+
+.stateContainer span {
+	display: block;
+	font-size: 2.5em;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.stateContainer span.name {
+	font-weight: 100;
+	font-size: 1.5em;
+}
+
+.stateContainer blockquote {
+	position: absolute;
+	bottom: 20px;
+	
+	/*background: #f9f9f9;*/
+	border-left: 10px solid #333;
+	margin: 1.5em 10px;
+	padding: 0.5em 10px;
+	text-align: initial;
+}
+
+.stateContainer blockquote:before {
+  color: #333;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+.stateContainer blockquote p {
+	display: inline;
+}
+
+.blink {
+  animation: blinker 1.5s linear infinite;
+}
+
+@keyframes blinker {  
+  50% { opacity: 0.65; }
+}
+ 
